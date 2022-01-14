@@ -6,7 +6,7 @@
         "safety": "high",
         "class_value": "good"
     },
-    "dataset": "/home/data/gitlab/Tech_Test/5.model/solution/data/car.data",
+    "dataset": "/home/data/gitlab/dataeng_test/5.model/solution/data/car.data",
     "model": "svm",
     "depth": "max",
     "random_state": 123,
