@@ -1,0 +1,14 @@
+{
+    "query": {
+        "maintenance": "high",
+        "doors": 4,
+        "lug_boot_size": "big",
+        "safety": "high",
+        "class_value": "good"
+    },
+    "dataset": "/home/data/gitlab/Tech_Test/5.model/solution/data/car.data",
+    "model": "svm",
+    "depth": "max",
+    "random_state": 123,
+    "cm_out_path": "/home/data/confusion_matrix.jpg"
+}
