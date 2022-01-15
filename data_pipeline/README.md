@@ -22,7 +22,6 @@ This section covers the scheduling of a set data preparation process in a given 
 The data  provided in the test repository contains the following columns:
 <img src="../misc/data_pipeline_desc.png" alt="pipeline_data_desc" width="300"/>
 
-
 <br>
 
 ## Data Procesing
