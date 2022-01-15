@@ -44,9 +44,9 @@ In order to schedule it at a given time interval, a cron job has to be set up.
 As containerisation is a major part of cloud processes, which is something I have vested interest in, I decided to take on the challenge to schedule the cron job in a container.
 
 ### _Running the Scueduler_
-To run the scheduler, run the following command at the [docker directory](docker): `./docker/build_and_run.sh`.
+To run the scheduler, run the following command at the [docker directory](docker): `./docker/build_and_run.sh -v /path/to/mount:/path/in/docker`.
 
-By default, the cleaned files are saved to `/home/data/cleaned_data`. If you prefer to map it to another path, modify the [scheduler](root) command to the desired path. 
+By default, the cleaned files are saved to `/path/in/docker/cleaned_data`. If you prefer to map it to another path, modify the [scheduler](root) command to the desired path. 
 
 If you are already running the cron job, you can access the container and install vim using `vim /var/spool/cron/crontabs/root` and make the changes to the scheduler or add new jobs.
 

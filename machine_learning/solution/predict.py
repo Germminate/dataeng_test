@@ -9,7 +9,7 @@ import numpy
 import argparse
 
 from components.dataset import Parser
-from components.utils import DimensionalityReduction, one_hot_encode, manual_encoding, create_and_display
+from components.utils import one_hot_encode, manual_encoding, create_and_display
 from components.model import SVM
 
 
