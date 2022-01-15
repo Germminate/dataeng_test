@@ -20,6 +20,7 @@ def get_country_data(country):
 
 
 def get_data(output_dir, save_all=False):
+    print("Pulling data from source ...")
     # Set list of countries
     countries = ['singapore', 'malaysia', 'thailand', 'lao', 'myanmar', 'china', 'viet-nam', 'mongolia', 'philippines']
     # Get last 6 months data for all listed countries
@@ -33,8 +34,11 @@ def get_data(output_dir, save_all=False):
 
     # Not all countries have data for this time period. Save only those with data.
     if data != []:
-        with open(os.path.join(output_dir, 'covid.json'), "w") as out_file:
+        out_path = os.path.join(output_dir, 'covid.json')
+        with open(out_path, "w") as out_file:
             json.dump(all_data, out_file, ensure_ascii=True, indent=4)
+
+        print("Pulled and saved data to %s" % out_path)
 
 
 if __name__ == "__main__":
@@ -45,3 +49,4 @@ if __name__ == "__main__":
     (opt_args, args) = parser.parse_known_args()
 
     get_data(opt_args.out_dir)
+
