@@ -19,12 +19,9 @@ This section covers the scheduling of a set data preparation process in a given 
 <br>
 
 ## Data Description
-The data is generated using the given parameters:
+The data  provided in the test repository contains the following columns:
 <img src="../misc/data_pipeline_desc.png" alt="pipeline_data_desc" width="300"/>
 
-Names are generated using an online random name generator.
-
-Prices are generated using Excel's random value generator function.
 
 <br>
 
