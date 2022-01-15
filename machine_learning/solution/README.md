@@ -110,4 +110,4 @@ Ideally, there is a remote storage volume to store datasets and they are called 
 ## Conclusion
 Given more time, I would like to achieve the ideal case of containerize for the module for alpine docker.
 
-Also, I would like to improve the model by using dimensionality reduction methods. I have commited the scripts I have been working on up until the deadline in a separate branch (dimensionality_reduction) to work on dimensionality reduction techniques.
+Also, I would like to improve the model by using dimensionality reduction methods.

@@ -16,5 +16,6 @@ sudo docker build --network=host \
 sudo docker run --privileged --rm -it --net=host --shm-size=1gb \
 -e DISPLAY \
 -e TERM=xterm-256color \
+-e TZ="Asia/Singapore" \
 $@ \
 data_pipeline:latest
