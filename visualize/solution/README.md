@@ -63,7 +63,7 @@ To view the dashboards, click [here](https://public.tableau.com/views/Covid_Case
 The top two features are for the Country_Cases_by_Month and the remaining are for the Cases_Over_Time graph.
 
 In case of any issues, below is a snapshot of the results:
-![](../misc/covid_dashboard.png)
+![](../../misc/covid_dashboard.png)
 
 Note: The graph only displays the cumulative case counts for Singapore.
 
