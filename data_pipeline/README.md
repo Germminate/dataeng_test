@@ -44,7 +44,7 @@ In order to schedule it at a given time interval, a cron job has to be set up.
 As containerisation is a major part of cloud processes, which is something I have vested interest in, I decided to take on the challenge to schedule the cron job in a container.
 
 ### _Running the Scueduler_
-To run the scheduler, run the following command at the [docker directory](docker): `docker build -t cron_job . && docker run --rm -v /path/to/external/volume:/home/data cron_job`.
+To run the scheduler, run the following command at the [docker directory](docker): `./docker/build_and_run.sh`.
 
 By default, the cleaned files are saved to `/home/data/cleaned_data`. If you prefer to map it to another path, modify the [scheduler](root) command to the desired path. 
 
