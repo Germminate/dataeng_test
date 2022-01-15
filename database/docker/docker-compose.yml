@@ -1,7 +1,9 @@
 version: '3.2'
 services:
   database:
-    build: ./postgres/.
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: postgres_db
     command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
     container_name: postgres_db
