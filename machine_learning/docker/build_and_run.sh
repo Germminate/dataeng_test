@@ -8,7 +8,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 echo "Building docker image ..."
 sudo docker build --network=host \
-    -t data_pipeline \
+    -t machine_learning \
     -f $DIR/Dockerfile \
     $DIR/..
 
@@ -16,6 +16,6 @@ sudo docker build --network=host \
 sudo docker run --privileged --rm -it --net=host --shm-size=1gb \
 -e DISPLAY \
 -e TERM=xterm-256color \
--e TZ="Asia/Singapore" \
 $@ \
-data_pipeline:latest
+--entrypoint=/bin/bash \
+machine_learning:latest

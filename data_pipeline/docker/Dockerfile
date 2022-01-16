@@ -1,5 +1,6 @@
 FROM python:3.9.0b4-alpine3.12
 
+RUN echo "Asia/Singapore" > /etc/timezone
 # Install vim for easy editing of scheduler
 RUN apk update
 RUN apk add bash \
